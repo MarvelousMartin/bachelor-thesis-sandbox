@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #121212; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+i, span, a {
+  display: inline-block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #121212;
+  margin: 0; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Styl odrazek */ }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #121212;
+  margin: 0 0 0 0; }
+
+
+.navigation {
+  padding: 10px 0;
+  transition: all 0.3s ease-out 0s; }
+  .navigation.navigation-transparent {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99; }
+  .navigation.fixed { /* Stala pozice, pri scrollovani mysi zustava navigace viditelna - nezmizi */
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(200, 0, 0, 0.8);}
+  .navigation .navbar {
+    position: relative;
+    padding: 0; }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) { /* MOBILE-FIRST rozvržení*/
+      .navigation .navbar .navbar-collapse {
+        position: absolute;
+        top: 116%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 8;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px 0 rgba(200, 0, 0, 0.8); } }
+
+    .navigation .navbar .navbar-nav .nav-item {
+      margin: 0 16px;
+      position: relative; }
+      .navigation .navbar .navbar-nav .nav-item a {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 700;
+        padding: 26px 0;
+        color: red;
+        position: relative;
+        transition: all 0.3s ease-out 0s; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .navigation .navbar .navbar-nav .nav-item a {
+            padding: 10px 0;
+            display: block; }
+        }
+
+.services-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-area {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+
+.services-content .services-icon i {
+  font-size: 32px;
+  color: red; }
+
+.services-content .services-content {
+  padding-left: 15px; }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .services-content .services-content {
+      padding-left: 15px;
+      padding-top: 0; } }
+
+.copyright {
+  padding: 23px 0; }
+  .copyright .text {
+    color: #6c6c6c;
+    font-size: 20px}
+
+.back-to-top { /* Tlacitko co po kliknuti presune uzivatele na zacatek stranky*/
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #0067f4;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  color: #fff;
+  font-size: 30px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+   display: none; /* Tlacitko je prozatim deaktivovano*/ }
+  .back-to-top:hover {
+    background-color: red;
+    color: #fff; }

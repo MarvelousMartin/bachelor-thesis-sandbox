@@ -1,73 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>JIRFA | Vaše střecha je náš problém!</title>
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/LineIcons.css"> <!-- Set ikon pouzivanych na tomto webu, free licence -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
 <body>
+    <header class="header-area">
+        <div class="navigation navigation-transparent fixed">
+            <div class="container">
+                <div class="row">
+                    <!-- navbar-expand je bootstrap funkcionalita pouzivana s navbar kvuli zaobaleni -->
+                    <nav class="navbar navbar-expand-lg">
+                        <a href="#" class="navbar-brand">
+                            <img src="assets/images/logo.png" width="30%" alt="Logo">
+                        </a>
 
-    <!--====== HEADER PART START ======-->
-
-    <header>
-        <nav>
-            <a href="#">
-                <img src="assets/images/logo.png" width="30%">
-            </a>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">Domů</a>
-                    </li>
-                    <li>
-                        <a href="#">Certifikáty</a>
-                    </li>
-                    <li>
-                        <a href="#">Reference</a>
-                    </li>
-                    <li>
-                        <a href="#">Kontakty</a>
-                    </li>
-                </ul>
+                        <div id="navigaceMain" class="navbar-collapse collapse">
+                            <ul class="navbar-nav m-auto"> <!-- Zarovnani vodorovne -->
+                                <li class="nav-item active">
+                                    <a href="#">Domů</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#sluzby">Služby</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Certifikáty</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Reference</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section id="uvod">
+    <section id="sluzby" class="services-area">
         <div>
             <h4>Čím se zabýváme</h4>
             <p>Stavební firma JIRFA, s.r.o. se specializuje na dodávky a montáže všech typů střech a krytin, pergol, garážových stání a dřevostaveb, včetně celkových oprav střešních plášťů, pokrývačských a klempířských prací a dále na veškeré sádrokartonářské práce. Také se zaměřujeme na opravu památkově chráněných objektů pod dozorem památkového úřadu.</p>
         </div>
         <div>
-            <div>
-                <h4>Střechy</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a>
-            </div>
-            <div>
-                <h4>Garáže</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a>
-            </div>
-            <div>
-                <h4>Podlahy</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a>
-            </div>
-            <div>
-                <h4>Pergoly</h4>
-                <a>Lorem ipsum<br> dolor sit amet.</a>
+            <div class="services-content">
+                <div class="services-icon">
+                    <i class="lni-home"></i>
+                </div>
+                <div class="services-content media-body">
+                    <h4>Střechy</h4>
+                    <a>Lorem ipsum<br> dolor sit amet.</a>
+                </div>
+                <div class="services-icon">
+                    <i class="lni-car"></i>
+                </div>
+                <div class="services-content media-body">
+                    <h4>Garáže</h4>
+                    <a>Lorem ipsum<br> dolor sit amet.</a>
+                </div>
+                <div class="services-icon">
+                    <i class="lni-road"></i>
+                </div>
+                <div class="services-content media-body">
+                    <h4>Podlahy</h4>
+                    <a>Lorem ipsum<br> dolor sit amet.</a>
+                </div>
+                <div class="services-icon">
+                    <i class="lni-brick"></i>
+                </div>
+                <div class="services-content media-body">
+                    <h4>Pergoly</h4>
+                    <a>Lorem ipsum<br> dolor sit amet.</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer id="footer">
-        <div align="center">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="20%"></a>
-        </div> <!-- footer logo -->
+        <hr style="background-color: red">
+        <div style="text-align: center">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright">
+                        <p class="text"><img src="assets/images/logo.png" alt="Logo" width="6%"> | &copy; 2021 Martin Dub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- "Tlacitko" back to top, prozatim deaktivovane pres display: none -->
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
 </body>
 </html>
