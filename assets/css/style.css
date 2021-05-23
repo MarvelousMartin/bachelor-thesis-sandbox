@@ -111,7 +111,38 @@ p {
             padding: 10px 0;
             display: block; }
         }
+/* -------------- ÚVOD -------------- */
+.header-title {
+  padding-bottom: 25px;
+  font-size: 44px;
+  line-height: 55px;
+  color: black;
+  font-weight: 600;
+}
 
+.button-main {
+  padding: 0 15px 5px 15px;
+  border-radius: 50px;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-image: -webkit-linear-gradient(left, red, darkred);
+  line-height: 50px; /* Výška tlačítka */
+}
+.button-main:hover {
+  padding: 0 15px 5px 15px;
+  border-radius: 50px;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-image: -webkit-linear-gradient(right, red, darkred);
+  line-height: 50px; /* Výška tlačítka */
+}
+
+
+/* -------------- SLUŽBY -------------- */
 .services-area {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -125,8 +156,6 @@ p {
   font-size: 32px;
   color: red; }
 
-.services-content .services-content {
-  padding-left: 15px; }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .services-content .services-content {
       padding-left: 15px;
