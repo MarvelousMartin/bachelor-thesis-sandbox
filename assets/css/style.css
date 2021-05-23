@@ -121,7 +121,7 @@ p {
 }
 
 .button-main {
-  padding: 0 15px 5px 15px;
+  padding: 0 15px 5px 18px;
   border-radius: 50px;
   overflow: hidden;
   color: white;
@@ -131,7 +131,7 @@ p {
   line-height: 50px; /* Výška tlačítka */
 }
 .button-main:hover {
-  padding: 0 15px 5px 15px;
+  padding: 0 15px 5px 18px;
   border-radius: 50px;
   overflow: hidden;
   color: white;
@@ -139,6 +139,12 @@ p {
   font-size: 24px;
   background-image: -webkit-linear-gradient(right, red, darkred);
   line-height: 50px; /* Výška tlačítka */
+  text-decoration: none;
+}
+
+.button-main img{
+  height: 32px;
+  margin-bottom: 5px;
 }
 
 
@@ -152,9 +158,10 @@ p {
       padding-top: 100px;
       padding-bottom: 100px; } }
 
-.services-content .services-icon i {
-  font-size: 32px;
-  color: red; }
+.services-content .services-icon img {
+  height: 40px;
+  margin-bottom: 5px;
+}
 
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .services-content .services-content {
