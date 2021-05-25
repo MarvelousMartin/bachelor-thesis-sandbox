@@ -65,6 +65,9 @@ p {
   color: #121212;
   margin: 0 0 0 0; }
 
+hr {
+  background-color: red;
+}
 
 .navigation {
   padding: 10px 0;
@@ -99,7 +102,7 @@ p {
       margin: 0 16px;
       position: relative; }
       .navigation .navbar .navbar-nav .nav-item a {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 30px;
         font-weight: 700;
         padding: 26px 0;
@@ -117,11 +120,11 @@ p {
   font-size: 44px;
   line-height: 55px;
   color: black;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .button-main {
-  padding: 0 15px 5px 18px;
+  padding: 0 15px 5px 18px; /* vycentrovani tlacitka */
   border-radius: 50px;
   overflow: hidden;
   color: white;
@@ -140,13 +143,13 @@ p {
   background-image: -webkit-linear-gradient(right, red, darkred);
   line-height: 50px; /* Výška tlačítka */
   text-decoration: none;
+
 }
 
 .button-main img{
   height: 32px;
   margin-bottom: 5px;
 }
-
 
 /* -------------- SLUŽBY -------------- */
 .services-area {
@@ -168,29 +171,55 @@ p {
       padding-left: 15px;
       padding-top: 0; } }
 
+/* -------------- CERTIFIKÁTY -------------- */
+.certificate-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .certificate-area {
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
+/* -------------- REFERENCE -------------- */
+.reference-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .reference-area {
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
+/* -------------- KONTAKTY -------------- */
+.contact-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-area {
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
+/* -------------- FOOTER -------------- */
 .copyright {
   padding: 23px 0; }
   .copyright .text {
     color: #6c6c6c;
-    font-size: 20px}
+    font-size: 20px }
 
 .back-to-top { /* Tlacitko co po kliknuti presune uzivatele na zacatek stranky*/
   position: fixed;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 70px;
+  height: 70px;
+  line-height: 65px;
   border-radius: 50%;
   text-align: center;
   background-color: #0067f4;
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  color: #fff;
-  font-size: 30px;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-   display: none; /* Tlacitko je prozatim deaktivovano*/ }
+  color: #fff; }
   .back-to-top:hover {
     background-color: red;
     color: #fff; }
