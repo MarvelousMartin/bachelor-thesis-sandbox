@@ -194,9 +194,14 @@ hr {
   max-height: 125px;
   opacity: 0.3;
   transition: all 0.3s ease-out 0s;
+  /* Vrstva šedé barvy, který překryje obrázek a na :hover zmizí */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .partners img:hover {
   opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* -------------- REFERENCE -------------- */
