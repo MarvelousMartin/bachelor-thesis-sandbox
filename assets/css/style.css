@@ -86,7 +86,8 @@ hr {
     box-shadow: 0 2px 4px 0 rgba(200, 0, 0, 0.8);}
   .navigation .navbar {
     position: relative;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
 
     @media only screen and (min-width: 768px) and (max-width: 991px) { /* MOBILE-FIRST rozvržení*/
       .navigation .navbar .navbar-collapse {
@@ -115,6 +116,10 @@ hr {
             padding: 10px 0;
             display: block; }
         }
+
+.navbar-brand img {
+  padding-left: 15px;
+}
 
 /* -------------- ÚVOD -------------- */
 .header-title {
@@ -162,6 +167,10 @@ hr {
     .services-area {
       padding-top: 100px;
       padding-bottom: 100px; } }
+
+.services-detail {
+  padding: 10px;
+}
 
 .services-content .services-icon img {
   height: 40px;
