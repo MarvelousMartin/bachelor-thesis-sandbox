@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <header class="header-area" style="padding-top: 200px">
+    <header class="header-area">
         <div class="navigation navigation-transparent fixed">
             <div class="container">
                 <div class="row">
-                    <!-- navbar-expand je bootstrap funkcionalita pouzivana s navbar kvuli zaobaleni -->
+                    <!-- navbar-expand je bootstrap funkcionalita používaná s navbar kvůli zaobalení -->
                     <nav class="navbar navbar-expand-lg d-flex justify-content-between">
                         <a href="#" class="navbar-brand">
-                            <img src="assets/images/logo.png" width="180" alt="Logo">
+                            <img src="assets/images/logo.png" width="180" alt="Logo"> <!-- width="180" je synt. OK-->
                         </a>
 
                         <div id="navigaceMain" class="navbar-collapse collapse">
@@ -47,11 +47,16 @@
             <div class="text-center">
                 <h1 class="header-title">Vaše střecha je náš problém!</h1>
                 <ul>
-                    <li><a class="button-main" href="#reference">Naše reference <img src="assets/images/icons/caret-right.svg" alt="Šipka"></a></li>
+                    <li>
+                        <a class="button-main" href="#reference">
+                            Naše reference
+                            <img src="assets/images/icons/caret-right.svg" alt="Šipka">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <img src="assets/images/cara.svg" class="w-100" alt="Dělicí čára"> <!-- width: 100% -->
+        <img src="assets/images/cara.svg" class="w-100" alt=""> <!-- width: 100% -->
     </header>
 
     <section id="services" class="services-area">
@@ -59,7 +64,10 @@
             <div class="text-center">
                 <h2 class="font-weight-bold">Čím se zabýváme</h2>
                 <br />
-                <p>Stavební firma JIRFA, s.r.o. se specializuje na dodávky a montáže všech typů střech a krytin, pergol, garážových stání a dřevostaveb, včetně celkových oprav střešních plášťů, pokrývačských a klempířských prací a dále na veškeré sádrokartonářské práce. Také se zaměřujeme na opravu památkově chráněných objektů pod dozorem památkového úřadu.</p>
+                <p>Stavební firma JIRFA, s.r.o. se specializuje na dodávky a montáže všech typů střech a krytin, pergol,
+                   garážových stání a dřevostaveb, včetně celkových oprav střešních plášťů, pokrývačských a klempířských
+                   prací a dále na veškeré sádrokartonářské práce. Také se zaměřujeme na opravu památkově chráněných
+                   objektů pod dozorem památkového úřadu.</p>
             </div>
             <div class="services-content text-center row justify-content-between mt-5">
                 <div class="services-detail">
@@ -76,7 +84,7 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Střechy</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
                 <div class="services-detail">
@@ -85,7 +93,7 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Garáže</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
                 <div class="services-detail">
@@ -94,7 +102,7 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Podlahy</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
                 <div class="services-detail">
@@ -103,7 +111,7 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Pergoly</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
                 <div class="services-detail">
@@ -112,7 +120,7 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Štíty</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
                 <div class="services-detail">
@@ -121,17 +129,19 @@
                     </div>
                     <div class="services-content media-body">
                         <h4>Ostatní</h4>
-                        <a>Lorem ipsum<br> dolor sit amet.</a>
+                        <a>Lorem ipsum<br> dolor sit amet.</a> <!-- TODO Dodělat -->
                     </div>
                 </div>
             </div>
-            <hr style="margin-top: 50px"> <!-- Použit margin-top, protože padding-top by změnil výšku elementu, ne odsunutí-->
+            <hr style="margin-top: 50px"> <!-- Byl použit margin-top, protože padding-top by změnil výšku elementu -->
         </div>
     </section>
 
     <section>
         <div class="text-center">
             <div class="container">
+                <h2 class="font-weight-bold">Partneři a dodavatelé</h2>
+                <br />
                 <div class="row partners justify-content-around">
                     <img src="assets/images/partners/bramac.png" alt="Bramac">
                     <img src="assets/images/partners/velux.png" alt="Velux">
@@ -143,16 +153,38 @@
     </section>
 
     <section id="certifikaty" class="certificate-area">
+        <!-- TODO Pro certifikáty ještě přijde modal okno, pro lepší zobrazení jednotlivých certifikátů-->
         <div class="text-center">
-            <h2 class="font-weight-bold">Certifikáty</h2>
-            <br />
-            <div style="padding-top: 500px"></div>
+            <h2 class="font-weight-bold mb-5">Certifikáty</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- style="cursor: zoom-in" byl zvolen pro lepší pochopení se s návštěvníkem -->
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                    <div class="col-lg-2 certificate mb-2">
+                        <img src="assets/images/certificates/mockup.png" style="cursor: zoom-in" alt=""><hr>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="reference" class="reference-area">
         <div class="text-center">
-            <h2 class="font-weight-bold">Reference</h2>
+            <h2 class="font-weight-bold">Reference</h2> <!-- TODO Dodělat -->
             <br />
             <div style="padding-top: 500px"></div>
         </div>
@@ -160,7 +192,7 @@
 
     <section id="kontakt" class="contact-area">
         <div class="text-center">
-            <h2 class="font-weight-bold">Kontaktujte nás</h2>
+            <h2 class="font-weight-bold">Kontaktujte nás</h2> <!-- TODO Dodělat -->
             <br />
             <div style="padding-top: 500px"></div>
         </div>
