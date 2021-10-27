@@ -38,6 +38,7 @@ Martin Dub - [LinkedIn](https://www.linkedin.com/in/martin-dub/)
 * [GitHub Pages](https://pages.github.com)
 * [Line Icons](https://lineicons.com)
 * [Google Fonts](https://fonts.google.com)
+* [Lord Icons](https://lordicon.com/icons)
 
 
 
