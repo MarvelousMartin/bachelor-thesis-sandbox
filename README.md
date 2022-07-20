@@ -1,3 +1,5 @@
+# Sandbox repository for testing purposes
+
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
